@@ -28,5 +28,37 @@ namespace DSA_LinkedList
             }
             Console.WriteLine("{0} is inserted in to linked list", node.id);
         }
+        public void add2(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                node.next = head;
+                head = node;
+            }
+            Console.WriteLine(node.id + " Added\n");
+        }
+        public void Display()
+        {
+            Node currentNode = this.head;
+            if (currentNode == null)
+            {
+                Console.WriteLine("Linked List Is Empty");
+            }
+            else
+            {
+                Console.WriteLine("LinkedList Sequence:");
+                while (currentNode != null)
+                {
+                    Console.WriteLine(currentNode.id + " ");
+                    currentNode = currentNode.next;
+                }
+            }
+
+        }
     }
 }
