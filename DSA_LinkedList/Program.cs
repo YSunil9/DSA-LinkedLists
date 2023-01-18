@@ -11,12 +11,17 @@ namespace DSA_LinkedList
             //list.add(56);
             //list.add(30);
             //list.add(70);
-    
-            list.add2(70);
-            list.add2(30);
-            list.add2(56);
+
+            //list.add2(70);
+            //list.add2(30);
+            //list.add2(56);
+            //list.Display();
+            //Console.ReadLine();
+
+            list.Append(56);
+            list.Append(30);
+            list.Append(70);
             list.Display();
-            Console.ReadLine();
         }
     }
 }

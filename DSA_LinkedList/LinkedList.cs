@@ -28,20 +28,7 @@ namespace DSA_LinkedList
             }
             Console.WriteLine("{0} is inserted in to linked list", node.id);
         }
-        public void add2(int data)
-        {
-            Node node = new Node(data);
-            if (head == null)
-            {
-                this.head = node;
-            }
-            else
-            {
-                node.next = head;
-                head = node;
-            }
-            Console.WriteLine(node.id + " Added\n");
-        }
+       
         public void Display()
         {
             Node currentNode = this.head;
@@ -58,7 +45,38 @@ namespace DSA_LinkedList
                     currentNode = currentNode.next;
                 }
             }
-
+        }
+        public void add2(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                node.next = head;
+                head = node;
+            }
+            Console.WriteLine(node.id + " Added\n");
+        }
+        public void Append(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                Node position = head;
+                while (position.next != null)
+                {
+                    position = position.next;
+                }
+                position.next = node;
+            }
+            Console.WriteLine(node.id + " is Inserted\n");
         }
     }
 }
