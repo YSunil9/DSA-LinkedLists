@@ -18,9 +18,17 @@ namespace DSA_LinkedList
             //list.Display();
             //Console.ReadLine();
 
-            list.Append(56);
-            list.Append(30);
-            list.Append(70);
+            //list.Append(56);
+            //list.Append(30);
+            //list.Append(70);
+            //list.Display();
+
+            list.add(56);
+            list.add(70);
+            Console.WriteLine("Before insert");
+            list.Display();
+            Console.WriteLine("After insert");
+            list.Insert(2,30);
             list.Display();
         }
     }
