@@ -23,12 +23,22 @@ namespace DSA_LinkedList
             //list.Append(70);
             //list.Display();
 
+            //list.add(56);
+            //list.add(70);
+            //Console.WriteLine("Before insert");
+            //list.Display();
+            //Console.WriteLine("After insert");
+            //list.Insert(2,30);
+            //list.Display();
+
             list.add(56);
+            list.add(30);
             list.add(70);
-            Console.WriteLine("Before insert");
+            Console.WriteLine("--------------------");
+            Console.WriteLine("Values Present in The List");
             list.Display();
-            Console.WriteLine("After insert");
-            list.Insert(2,30);
+            list.RemoveFirst();
+            Console.WriteLine("After Deleting The First Value");
             list.Display();
         }
     }

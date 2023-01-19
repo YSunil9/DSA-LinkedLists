@@ -98,5 +98,14 @@ namespace DSA_LinkedList
                 temp.next = node;
             }
         }
+        public void RemoveFirst()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("List Empty");
+            }
+            else
+            this.head = this.head.next;
+        }
     }
 }
